@@ -1,0 +1,273 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="bootstrap-css-js/bootstrap.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <title>SAMY-TRANS</title>
+</head>
+<body class="m-2">
+    <div class=" bg-light">
+        <h1>Samy-Trans</h1>
+        <p>Service de Transport Inter-Departemental</p>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+                <a class="navbar-brand" href="#">Samy-Trans</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" data-toggle="modal"  data-target="#Ticket-Online" href="#">Ticket-Online</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Contact</a>
+                    </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                  </form>
+                </div>
+            </nav>
+        </div>
+        <div class="container-fluid  mt-3">
+          <h3 class="text-center">Voyager dans les provinces en toute sécurité!</h3>
+          <div class="row">
+            <div class="col order-1" >
+              <h3 class="my-4">Départements</h3>
+              <nav class="text-center">
+               <a class="p-3  mt-4  bg-secondary text-white rounded border" href="#">Nord-Ouest</a> 
+               <a class="p-3  mt-4  bg-secondary text-white rounded border" href="#">Nord-Est</a> 
+               <a class="p-3  mt-4  bg-secondary text-white rounded border" href="#">Nord</a> 
+               <a class="p-3  mt-4  bg-secondary text-white rounded border" href="#">Centre</a> 
+               <a class="p-3  mt-4  bg-secondary text-white rounded border" href="#">Jérémie</a> 
+               <a class="p-3  mt-4  bg-secondary text-white rounded border" href="#">Le Sud</a> 
+               <a class="p-3  mt-4  bg-secondary text-white rounded border" href="#">La Grande-Anse</a> 
+               <a class="p-3  mt-4  bg-secondary text-white rounded border" href="#">Les Nippes</a> 
+               <a class="p-3  mt-4  bg-secondary text-white rounded border" href="#">Le Sud-Est</a> 
+               <a class="p-3  mt-4  bg-secondary text-white rounded border" href="#">Ouest</a> 
+               <a class="p-3  mt-4  bg-secondary text-white rounded border" href="#">Artibonite</a>
+            </nav>
+            </div>
+          </div>
+          <img style="margin: 0 30%;" src="img/bus_1.jpg" width="500px" height="350px" alt="Bus">
+
+           <!-- Horaire -->
+           <h1 id="schedule" class="display-4 text-center my-5 text-muted">Horaire de Voyage</h1>
+
+           <ul  class="list-group">
+               <li class="list-group-item list-group-item-info">
+                   <div class="d-flex justify-content-between">
+                       <h2 class="mb-1 text-muted">Ouest-(Nord-Ouest)</h2>
+                       <span class="badge badge-pill badge-info p-2">9:00 am </span>
+                   </div>
+                   <p class="mb-1">Station de Port-de-Paix</p>
+               </li>
+               <li class="list-group-item">
+                  <div class="d-flex justify-content-between">
+                      <h2 class="mb-1">Ouest-(Nord-Est)</h2>
+                      <span class="badge badge-pill badge-info p-2">9:00 am </span>
+                  </div>
+                  <p class="mb-1">Station Cap-Haïtien</p>
+              </li>
+              <li class="list-group-item">
+                  <div class="d-flex justify-content-between">
+                      <h2 class="mb-1">Ouest-Nord</h2>
+                      <span class="badge badge-pill badge-info p-2">9:00 am </span>
+                  </div>
+                  <p class="mb-1">Station de Terrier-Rouge</p>
+              </li>
+              <li class="list-group-item">
+                  <div class="d-flex justify-content-between">
+                      <h2 class="mb-1">Ouest-....</h2>
+                      <span class="badge badge-pill badge-info p-2">9:00 am </span>
+                  </div>
+                  <p class="mb-1">Station ....</p>
+              </li>
+              <li class="list-group-item">
+                  <div class="d-flex justify-content-between">
+                      <h2 class="mb-1">Ouest-...</h2>
+                      <span class="badge badge-pill badge-info p-2">9:00 am </span>
+                  </div>
+                  <p class="mb-1">Station de ...</p>
+              </li>
+              <li class="list-group-item">
+                  <div class="d-flex justify-content-between">
+                      <h5 class="mb-1">Ouest-...</h5>
+                      <span class="badge badge-pill badge-info p-2">9:00 am </span>
+                  </div>
+                  <p class="mb-1">Station de ...</p>
+              </li>
+              <li class="list-group-item">
+                  <div class="d-flex justify-content-between">
+                      <h2 class="mb-1">Ouest-(Nord-Ouest)</h2>
+                      <span class="badge badge-pill badge-info p-2">9:00 am </span>
+                  </div>
+                  <p class="mb-1">Station de Port-de-Paix</p>
+              </li>
+               <li class="list-group-item">
+                       <div class="d-flex justify-content-between">
+                           <h2 class="mb-1">React Basics</h2>
+                           <span class="badge badge-pill badge-info p-2">10:00 am </span>
+                       </div>
+                       <p class="mb-1">Vivianne McVue</p>
+                   </li>
+                   <li class="list-group-item">
+                           <div class="d-flex justify-content-between">
+                               <h2 class="mb-1">Hey Mongo!</h2>
+                               <span class="badge badge-pill badge-info p-2">11:00 am </span>
+                           </div>
+                           <p class="mb-1">Jay Query</p>
+                       </li>
+                       <li class="list-group-item list-group-item-success">
+                               <div class="d-flex justify-content-between">
+                                   <h2 class="mb-1">Lunch</h2>
+                                   <span class="badge badge-pill badge-info p-2">12:00pm </span>
+                               </div>
+                               <p class="mb-1">Free Pizza for Everyone!</p>
+                           </li>
+           </ul>
+           <!-- /Horaire -->
+
+           <img class="mt-5" src="img/street.jpeg" width="100%" height="600px" alt="Bus">
+           
+           <button type="button" class="btn btn-outline-info btn-lg mx-auto d-block my-5" data-toggle="modal" data-target="#Ticket-Online">Acheter votre Billet</button>
+           
+           <!-- footer -->
+           <div class="row py-3 bg-dark text-white" >
+              <div class="col-md-7">
+                  <ul class="nav">
+                      <li class="nav-item">
+                          <a href="#" class="nav-link" >Community</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="#" class="nav-link " >Tracks</a>
+                      </li>
+                      <li class="nav-item">
+
+                        <div class="btn-group dropup bg-info ">
+                            <button type="button" class="btn btn-outline-secondary text-white">Autre SiteWeb par Sam</button>
+                            <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="sr-only">toggle dropdown</span>
+                            </button>
+                            <div class="dropdown-menu bg-primary ">
+                                <a href="#" class="dropdown-item text-white">English Online</a>
+                                <a href="#" class="dropdown-item text-white">Samy_Enterprise</a>
+                                <a href="#" class="dropdown-item text-white">Green Energy</a>
+                                <a href="#" class="dropdown-item text-white">Haïti-Touriste</a>
+                            </div>
+                        </div>
+                      </li>
+                  </ul>
+              </div>
+              <div class="col-md text-md-right">
+                  <small>&copy; <a href="#">jbonheur@gmail.com</a>  &amp; TreeHouse</small>
+              </div>
+          </div>
+          <!-- /footer -->
+           
+        </div>
+    <!-- modal -->
+    <div class="modal fade" id="Ticket-Online" tabindex="-1" role="dialog" aria-labelledby="Billet Form" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content text-center">
+                <div class="modal-header bg-info   text-white">
+                    <h5 class="modal-title " id="exampleModallabel"> Réservation </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                
+                <div class="modal-body">
+
+                  <!-- Registration Form -->
+                  <form>
+                      <div class="alert alert-warning alert-dismissble fade show py-5" role="alert">
+                          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                          </button>
+                          <strong>Voyager en toute Securité et Tranquilité</strong> dans un confort approprié!
+                      </div>
+                      <h5 class="mb-4">Basic Info</h5>
+                      <div class="form-group">
+                          <label class="form-control-label" for="name">Nom:</label>
+                          <input type="text" class="form-control" id="name">
+                      </div>
+                      <div class="form-group">
+                          <label class="form-control-label" for="name">Prénom:</label>
+                          <input type="text" class="form-control" id="name">
+                      </div>
+                      <div class="form-group">
+                              <label class="form-control-label" for="email">E-mail:</label>
+                              <input type="email" class="form-control" id="formGroupExampleInput2">
+                          </div>
+                      <div class="form-group">
+                          <label class="form-control-label" for="name">Date de Réservation:</label>
+                          <input type="text" class="form-control" id="name">
+                      </div>
+                      <div class="form-group">
+                          <label class="form-control-label" for="name">Délai:</label>
+                          <input type="text" class="form-control" id="name">
+                      </div>
+
+                      <div class="form-group">
+                          <label for="role">Itinéraire:</label>
+                          <select class="custom-select form-control" name="select" id="role">
+                              <option value="Ouest-Nord">Ouest-Nord(2500 Gdes)</option>
+                              <option value="Ouest-Centre">Ouest-Centre(750Gdes)</option>
+                              <option value="Ouest-Sud">Ouest-Sud (1000 Gdes)</option>
+                          </select>
+                      </div>
+                      <hr class="mb-4">
+                <h5 class="mb-4">Paiement Par:</h5>
+
+                <div class="form-row">
+                    <div class="col-lg-6 form-group">
+                        <label for="cc-num">UniCarte:</label>
+                        <input class="form-control" id="cc-num" placeholder="000-000-0000" type="text">
+                    </div>
+                    <div class="col-lg-6 form-group">
+                        <label for="cc-num">SogeCarte:</label>
+                        <input class="form-control" id="cc-num" placeholder="000-000-0000" type="text">
+                    </div>
+                    <div class="col-lg-6 form-group">
+                        <label for="cc-num">MasterCarte:</label>
+                        <input class="form-control" id="cc-num" placeholder="000-000-0000" type="text">
+                    </div>
+                    <div class="col-lg-6 form-group">
+                        <label for="cc-num">MonCash:</label>
+                        <input class="form-control" id="cc-num" placeholder="000-000-0000" type="text">
+                    </div>
+                </div>
+                <div class="form-row bg-info text-white mb-4">
+                    <label class="col-lg-12 text-center " > <strong>AVIS:</strong> </label>
+                    <h4>La Réservation n'est plus valable après le voyage ou après le délai</h4>
+                    <hr class="mb-4">
+                </div>
+                    <button type="submit" class="btn btn-primary btn-lg">Réserver</button>
+                  </form> <!-- /Registration Form -->
+                </div>
+              </div>
+            </div>
+          </div>
+    <!-- /modal -->
+    
+
+    <!-- <script src="bootstrap-css-js/slim.min.js"></script>
+    <script src="bootstrap-css-js/popper.min.js"></script>
+    <script src="bootstrap-css-js/bootstrap.min.js"></script> -->
+</body>
+</html>
